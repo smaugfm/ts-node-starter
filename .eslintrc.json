@@ -1,0 +1,19 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "experimentalObjectRestSpread": true,
+        "ecmaFeatures": {
+            "modules": true
+        }
+    },
+    "rules": {
+        "no-console": "warn"
+    },
+    "plugins": ["only-warn"]
+}

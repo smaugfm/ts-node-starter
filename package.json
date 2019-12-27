@@ -1,0 +1,36 @@
+{
+    "dependencies": {
+        "ramda": "^0.26.1"
+    },
+    "devDependencies": {
+        "@types/ramda": "^0.26.19",
+        "eslint-plugin-only-warn": "^1.0.2",
+        "eslint": "^6.8.0",
+        "husky": "^3.1.0",
+        "lint-staged": "^9.5.0",
+        "prettier": "^1.19.1",
+        "ts-node": "^8.3.0",
+        "typescript": "^3.5.3"
+    },
+    "name": "starter",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "scripts": {
+        "eslint": "eslint 'src/**/*.{js,jsx,ts,tsx,json}'"
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx,json}": "eslint --max-warnings=0",
+        "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    }
+}
