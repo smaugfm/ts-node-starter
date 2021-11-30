@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
     "lib": ["es2018"],
     "outDir": "dist",
     "target": "es2018",
